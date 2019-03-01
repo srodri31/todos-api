@@ -9,6 +9,8 @@ class TodosController < ApplicationController
 
   # POST /todos
   def create
+    pp "**** RAW PARAMS ****"
+    pp params
     pp "**** CREATE TODO ****"
     pp todo_params
     @todo = Todo.create!(todo_params)
